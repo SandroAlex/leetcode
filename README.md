@@ -22,6 +22,7 @@ My code below the docstring is left untouched — the review only ever *adds* th
 | `climbing_stairs.py` | [70. Climbing Stairs](PROBLEMS_STATEMENTS.md#70-climbing-stairs) | Easy |
 | `valid_sudoku.py` | [36. Valid Sudoku](PROBLEMS_STATEMENTS.md#36-valid-sudoku) | Medium |
 | `rotate_image.py` | [48. Rotate Image](PROBLEMS_STATEMENTS.md#48-rotate-image) | Medium |
+| `valid_palindrome.py` | [125. Valid Palindrome](PROBLEMS_STATEMENTS.md#125-valid-palindrome) | Easy |
 
 Full problem statements are collected in [`PROBLEMS_STATEMENTS.md`](PROBLEMS_STATEMENTS.md).
 
