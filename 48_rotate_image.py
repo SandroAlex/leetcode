@@ -49,7 +49,7 @@ class Solution:
         Do not return anything, modify matrix in-place instead.
         """
 
-        self.matrix = matrix    
+        self.matrix = matrix
         self.size = len(self.matrix)
 
         self._transpose()
@@ -59,10 +59,12 @@ class Solution:
         for i, row_elements in enumerate(self.matrix):
             for j, row_element in enumerate(row_elements):
                 if i > j:
-                    
+
                     # Swap elements
-                    self.matrix[i][j], self.matrix[j][i] = \
-                        self.matrix[j][i], self.matrix[i][j]
+                    self.matrix[i][j], self.matrix[j][i] = (
+                        self.matrix[j][i],
+                        self.matrix[i][j],
+                    )
 
     def _reverse_columns(self):
         for i, row_elements in enumerate(self.matrix):
@@ -70,25 +72,23 @@ class Solution:
                 if j < len(self.matrix) // 2:
 
                     # Swap elements
-                    self.matrix[i][j], self.matrix[i][self.size - 1 - j] = \
-                        self.matrix[i][self.size - 1 - j], self.matrix[i][j]
+                    self.matrix[i][j], self.matrix[i][self.size - 1 - j] = (
+                        self.matrix[i][self.size - 1 - j],
+                        self.matrix[i][j],
+                    )
 
 
 if __name__ == "__main__":
 
     # Input 1
-    matrix1: List[List[int]] = [
-        [1,2,3],
-        [4,5,6],
-        [7,8,9]
-    ]
+    matrix1: List[List[int]] = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
     # Input 2
     matrix2: List[List[int]] = [
-        [5,1,9,11],
-        [2,4,8,10],
-        [13,3,6,7],
-        [15,14,12,16]
+        [5, 1, 9, 11],
+        [2, 4, 8, 10],
+        [13, 3, 6, 7],
+        [15, 14, 12, 16],
     ]
 
     Solution().rotate(matrix=matrix1)

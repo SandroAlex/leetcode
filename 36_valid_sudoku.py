@@ -51,7 +51,7 @@ from typing import List
 
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        
+
         # Initialization
         self.board = board
 
@@ -65,14 +65,14 @@ class Solution:
         """
         Test validity in each row
         """
-        
+
         # Loop over all columns
         for row in range(9):
 
             # Current values in the row
             current_values: List[str] = []
 
-            # Grab current line       
+            # Grab current line
             line: List[str] = self.board[row]
 
             # Loop over all columns
@@ -137,7 +137,7 @@ class Solution:
                 # Current values in the column
                 current_values: List[str] = []
 
-                # Loop inside each sub box 
+                # Loop inside each sub box
                 for row in range(anc_row, anc_row + 3):
                     for col in range(anc_col, anc_col + 3):
 
@@ -157,39 +157,38 @@ class Solution:
         # All valid sub boxes
         return True
 
+
 if __name__ == "__main__":
 
     # Valid
     case1_input: List[List[str]] = [
-        ["5","3",".",".","7",".",".",".","."],
-        ["6",".",".","1","9","5",".",".","."],
-        [".","9","8",".",".",".",".","6","."],
-        ["8",".",".",".","6",".",".",".","3"],
-        ["4",".",".","8",".","3",".",".","1"],
-        ["7",".",".",".","2",".",".",".","6"],
-        [".","6",".",".",".",".","2","8","."],
-        [".",".",".","4","1","9",".",".","5"],
-        [".",".",".",".","8",".",".","7","9"]
+        ["5", "3", ".", ".", "7", ".", ".", ".", "."],
+        ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+        [".", "9", "8", ".", ".", ".", ".", "6", "."],
+        ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+        ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+        ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+        [".", "6", ".", ".", ".", ".", "2", "8", "."],
+        [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+        [".", ".", ".", ".", "8", ".", ".", "7", "9"],
     ]
     case1_output: bool = True
 
     # Invalid
     case2_input: List[List[str]] = [
-        ["8","3",".",".","7",".",".",".","."],
-        ["6",".",".","1","9","5",".",".","."],
-        [".","9","8",".",".",".",".","6","."],
-        ["8",".",".",".","6",".",".",".","3"],
-        ["4",".",".","8",".","3",".",".","1"],
-        ["7",".",".",".","2",".",".",".","6"],
-        [".","6",".",".",".",".","2","8","."],
-        [".",".",".","4","1","9",".",".","5"],
-        [".",".",".",".","8",".",".","7","9"]
+        ["8", "3", ".", ".", "7", ".", ".", ".", "."],
+        ["6", ".", ".", "1", "9", "5", ".", ".", "."],
+        [".", "9", "8", ".", ".", ".", ".", "6", "."],
+        ["8", ".", ".", ".", "6", ".", ".", ".", "3"],
+        ["4", ".", ".", "8", ".", "3", ".", ".", "1"],
+        ["7", ".", ".", ".", "2", ".", ".", ".", "6"],
+        [".", "6", ".", ".", ".", ".", "2", "8", "."],
+        [".", ".", ".", "4", "1", "9", ".", ".", "5"],
+        [".", ".", ".", ".", "8", ".", ".", "7", "9"],
     ]
     case2_output: bool = False
 
-    assert Solution().isValidSudoku(board=case1_input) == case1_output, \
-        "Case 1 failed!"
-    assert Solution().isValidSudoku(board=case2_input) == case2_output, \
-        "Case 2 failed!"
+    assert Solution().isValidSudoku(board=case1_input) == case1_output, "Case 1 failed!"
+    assert Solution().isValidSudoku(board=case2_input) == case2_output, "Case 2 failed!"
 
     print(">>> Run completed!")

@@ -59,29 +59,36 @@ class Solution:
 
         # Trivial case
         if size == 1:
-            return True 
+            return True
 
         # Even case
         if size % 2 == 0:
 
             # Palindrome
-            if normalized_string[0: size // 2] == normalized_string[-1: size // 2 - 1: -1]:
+            if (
+                normalized_string[0 : size // 2]
+                == normalized_string[-1 : size // 2 - 1 : -1]
+            ):
                 return True
-            
+
             # Not palindrome
             else:
                 return False
 
         # Odd case
         if size % 2 != 0:
-            
+
             # Palindrome
-            if normalized_string[0: size // 2 + 1] == normalized_string[-1: size // 2 - 1: -1]:
+            if (
+                normalized_string[0 : size // 2 + 1]
+                == normalized_string[-1 : size // 2 - 1 : -1]
+            ):
                 return True
-            
+
             # Not palindrome
             else:
                 return False
+
 
 if __name__ == "__main__":
 
@@ -97,11 +104,8 @@ if __name__ == "__main__":
     input3: str = " "
     output3: bool = True
 
-    assert Solution().isPalindrome(s=input1) == output1, \
-        "Case 1 incorrect!"
-    assert Solution().isPalindrome(s=input2) == output2, \
-        "Case 2 incorrect!"
-    assert Solution().isPalindrome(s=input3) == output3, \
-        "Case 3 incorrect!"
-    
+    assert Solution().isPalindrome(s=input1) == output1, "Case 1 incorrect!"
+    assert Solution().isPalindrome(s=input2) == output2, "Case 2 incorrect!"
+    assert Solution().isPalindrome(s=input3) == output3, "Case 3 incorrect!"
+
     print(">>> All cases run successfully!")

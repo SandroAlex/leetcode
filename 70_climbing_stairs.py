@@ -37,7 +37,7 @@ from typing import List
 
 class Solution:
     def climbStairs(self, n: int) -> int:
-        
+
         # Very simple case n==1:
         if n == 1:
             return 1
@@ -51,11 +51,11 @@ class Solution:
 
             # Create a table for storing results
             s: List[int] = [1] * n
-            s[0] = 1 # n = 1
-            s[1] = 2 # n = 2
+            s[0] = 1  # n = 1
+            s[1] = 2  # n = 2
 
             # Fill remaing results
             for i in range(2, n):
-                s[i] = s[i-1] + s[i-2]
+                s[i] = s[i - 1] + s[i - 2]
 
-            return s[n-1]
+            return s[n - 1]
