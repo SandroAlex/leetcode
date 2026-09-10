@@ -4,7 +4,7 @@ A personal study log of LeetCode problems. For each problem I write my own solut
 
 ## How it works
 
-For every problem there is one Python file, named after the problem (e.g. `valid_sudoku.py`). Each file contains:
+For every problem there is one Python file, named `<number>_<problem_name>.py` (e.g. `36_valid_sudoku.py`). Each file contains:
 
 1. **My solution** — a `Solution` class written from scratch, plus a small `__main__` block with test cases.
 2. **A review at the top of the file**, in the module docstring, written with Claude Code. It covers:
@@ -19,10 +19,10 @@ My code below the docstring is left untouched — the review only ever *adds* th
 
 | File | Problem | Difficulty |
 | --- | --- | --- |
-| `climbing_stairs.py` | [70. Climbing Stairs](PROBLEMS_STATEMENTS.md#70-climbing-stairs) | Easy |
-| `valid_sudoku.py` | [36. Valid Sudoku](PROBLEMS_STATEMENTS.md#36-valid-sudoku) | Medium |
-| `rotate_image.py` | [48. Rotate Image](PROBLEMS_STATEMENTS.md#48-rotate-image) | Medium |
-| `valid_palindrome.py` | [125. Valid Palindrome](PROBLEMS_STATEMENTS.md#125-valid-palindrome) | Easy |
+| `36_valid_sudoku.py` | [36. Valid Sudoku](PROBLEMS_STATEMENTS.md#36-valid-sudoku) | Medium |
+| `48_rotate_image.py` | [48. Rotate Image](PROBLEMS_STATEMENTS.md#48-rotate-image) | Medium |
+| `70_climbing_stairs.py` | [70. Climbing Stairs](PROBLEMS_STATEMENTS.md#70-climbing-stairs) | Easy |
+| `125_valid_palindrome.py` | [125. Valid Palindrome](PROBLEMS_STATEMENTS.md#125-valid-palindrome) | Easy |
 
 Full problem statements are collected in [`PROBLEMS_STATEMENTS.md`](PROBLEMS_STATEMENTS.md).
 
@@ -31,13 +31,13 @@ Full problem statements are collected in [`PROBLEMS_STATEMENTS.md`](PROBLEMS_STA
 Each file is self-contained and runs its own assertions:
 
 ```bash
-python valid_sudoku.py
+python 36_valid_sudoku.py
 ```
 
 Requires Python 3.9+ (uses `typing.List` annotations; standard library only).
 
 ## Adding a new problem
 
-1. Create `<problem_name>.py` with a `Solution` class and a `__main__` block of test cases.
+1. Create `<number>_<problem_name>.py` with a `Solution` class and a `__main__` block of test cases.
 2. Ask Claude Code to review it and add the docstring summary.
 3. Append the problem statement to `PROBLEMS_STATEMENTS.md` and a row to the table above.

@@ -5,45 +5,9 @@ Reconstructed from LeetCode. Solutions live in the correspondingly named
 
 ---
 
-## 70. Climbing Stairs
-
-**Difficulty:** Easy — `climbing_stairs.py`
-
-You are climbing a staircase. It takes `n` steps to reach the top.
-
-Each time you can either climb `1` or `2` steps. In how many distinct ways can
-you climb to the top?
-
-### Example 1
-
-```
-Input: n = 2
-Output: 2
-Explanation: There are two ways to climb to the top.
-1. 1 step + 1 step
-2. 2 steps
-```
-
-### Example 2
-
-```
-Input: n = 3
-Output: 3
-Explanation: There are three ways to climb to the top.
-1. 1 step + 1 step + 1 step
-2. 1 step + 2 steps
-3. 2 steps + 1 step
-```
-
-### Constraints
-
-- `1 <= n <= 45`
-
----
-
 ## 36. Valid Sudoku
 
-**Difficulty:** Medium — `valid_sudoku.py`
+**Difficulty:** Medium — `36_valid_sudoku.py`
 
 Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be
 validated **according to the following rules**:
@@ -51,12 +15,12 @@ validated **according to the following rules**:
 1. Each row must contain the digits `1-9` without repetition.
 2. Each column must contain the digits `1-9` without repetition.
 3. Each of the nine `3 x 3` sub-boxes of the grid must contain the digits `1-9`
-   without repetition.
+  without repetition.
 
 **Note:**
 
 - A Sudoku board (partially filled) could be valid but is not necessarily
-  solvable.
+solvable.
 - Only the filled cells need to be validated according to the mentioned rules.
 
 ### Example 1
@@ -104,7 +68,7 @@ invalid.
 
 ## 48. Rotate Image
 
-**Difficulty:** Medium — `rotate_image.py`
+**Difficulty:** Medium — `48_rotate_image.py`
 
 You are given an `n x n` 2D `matrix` representing an image, rotate the image by
 **90 degrees (clockwise)**.
@@ -135,9 +99,45 @@ Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
 ---
 
+## 70. Climbing Stairs
+
+**Difficulty:** Easy — `70_climbing_stairs.py`
+
+You are climbing a staircase. It takes `n` steps to reach the top.
+
+Each time you can either climb `1` or `2` steps. In how many distinct ways can
+you climb to the top?
+
+### Example 1
+
+```
+Input: n = 2
+Output: 2
+Explanation: There are two ways to climb to the top.
+1. 1 step + 1 step
+2. 2 steps
+```
+
+### Example 2
+
+```
+Input: n = 3
+Output: 3
+Explanation: There are three ways to climb to the top.
+1. 1 step + 1 step + 1 step
+2. 1 step + 2 steps
+3. 2 steps + 1 step
+```
+
+### Constraints
+
+- `1 <= n <= 45`
+
+---
+
 ## 125. Valid Palindrome
 
-**Difficulty:** Easy — `valid_palindrome.py`
+**Difficulty:** Easy — `125_valid_palindrome.py`
 
 A phrase is a **palindrome** if, after converting all uppercase letters into
 lowercase letters and removing all non-alphanumeric characters, it reads the
