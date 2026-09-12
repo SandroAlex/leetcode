@@ -23,6 +23,7 @@ My code below the docstring is left untouched — the review only ever *adds* th
 | `48_rotate_image.py` | [48. Rotate Image](PROBLEMS_STATEMENTS.md#48-rotate-image) | Medium |
 | `70_climbing_stairs.py` | [70. Climbing Stairs](PROBLEMS_STATEMENTS.md#70-climbing-stairs) | Easy |
 | `74_search_a_2d_matrix.py` | [74. Search a 2D Matrix](PROBLEMS_STATEMENTS.md#74-search-a-2d-matrix) | Medium |
+| `88_merge_sorted_array.py` | [88. Merge Sorted Array](PROBLEMS_STATEMENTS.md#88-merge-sorted-array) | Easy |
 | `121_best_time_to_buy_and_sell_a_stock.py` | [121. Best Time to Buy and Sell Stock](PROBLEMS_STATEMENTS.md#121-best-time-to-buy-and-sell-stock) | Easy |
 | `122_best_time_to_buy_and_sell_a_stock.py` | [122. Best Time to Buy and Sell Stock II](PROBLEMS_STATEMENTS.md#122-best-time-to-buy-and-sell-stock-ii) | Medium |
 | `125_valid_palindrome.py` | [125. Valid Palindrome](PROBLEMS_STATEMENTS.md#125-valid-palindrome) | Easy |
