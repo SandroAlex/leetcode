@@ -19,6 +19,7 @@ My code below the docstring is left untouched — the review only ever *adds* th
 
 | File | Problem | Difficulty |
 | --- | --- | --- |
+| `27_remove_element.py` | [27. Remove Element](PROBLEMS_STATEMENTS.md#27-remove-element) | Easy |
 | `36_valid_sudoku.py` | [36. Valid Sudoku](PROBLEMS_STATEMENTS.md#36-valid-sudoku) | Medium |
 | `48_rotate_image.py` | [48. Rotate Image](PROBLEMS_STATEMENTS.md#48-rotate-image) | Medium |
 | `70_climbing_stairs.py` | [70. Climbing Stairs](PROBLEMS_STATEMENTS.md#70-climbing-stairs) | Easy |
